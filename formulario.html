@@ -7,7 +7,109 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container mt-5 border shadow p-3">
+        <h1 class="text-center">Formulario</h1>
+
+        
+        <form action="#">
+
+            <!--Nombre y Apellido-->
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre y Apellido</span>
+                        <input type="text" arial-label="Nombre" class="form-control">
+                        <input type="text" arial-label="Apellido" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <!--Email y Contraseña -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="correo@dominio.com" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="8-20 caracteres, mayusculas y minusculas" required>
+                </div>
+            </div>
+
+            <!--Direccion-->
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="direccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" placeholder="Calle xxx Cra xxx" id="direccion">
+                </div>
+            </div>
+
+            <!--Text Area Descripcion-->
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <div class="form-floating mb-3">
+                        <textarea name="" id="descripcion" class="form-control" rows="3" style="height: 100px"></textarea>
+                        <label for="floatingTextarea">Descripcion</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Ciudad Departamento y Codigo Area -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad">
+                </div>
+                <div class="col-md-4">
+                    <label for="ciudad" class="form-label">Departamento</label>
+                    <select class="form-select">
+                        <option value="1">Risaralda</option>
+                        <option value="2">Quindio</option>
+                        <option value="3">Caldas</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="zipcode" class="form-label">Zip-Code</label>
+                    <input type="text" class="form-control" id="zipcode">
+                </div>
+            </div>
+            
+            <!--Selector y Checkbox-->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="colombiana" id="colombiana">
+                        <label class="form-check-label" for="colombiana">
+                          Colombiana
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="colombiana" id="colombiana">
+                        <label class="form-check-label" for="colombiana">
+                          Extrangera
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="autorizacion">
+                        <label for="autorizacion" class="form-check-label">Autorizacion Tratamiento de datos</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Boton de enviar-->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <button class="btn btn-primary w-100">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
