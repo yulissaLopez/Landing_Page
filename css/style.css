@@ -62,6 +62,14 @@
     text-align: center;
 }
 
+.row-section-w{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .card {
     min-height: 200px;
     max-height: 296px;
@@ -72,3 +80,4 @@
     max-height: 200px;
     overflow: hidden;
 }
+
