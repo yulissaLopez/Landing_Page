@@ -1,0 +1,74 @@
+.navbar{
+    background-color: black;
+}
+.navbar-nav .nav-link{
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
+}
+
+.navbar-nav .nav-link:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.navbar-nav .nav-link.active {
+    background-color: white; 
+    color: black; 
+    border-radius: 50px;
+}
+
+.navbar-nav .nav-link:active {
+    background-color: white !important; /* Asegura que el fondo sea blanco al hacer clic */
+    color: black !important; /* Asegura que el texto sea negro al hacer clic */
+}
+
+.navbar-toggler{
+    border-radius: 0.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-toggler-icon{
+    background-color: white;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* section 1*/
+.black-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.white-section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-section{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    min-height: 200px;
+    max-height: 296px;
+}
+
+.square{
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
